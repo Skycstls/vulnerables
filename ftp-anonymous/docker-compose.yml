@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  ftp:
+    image: stilliard/pure-ftpd
+    environment:
+      FTP_USER: "anonymous|12345"
+    ports:
+      - "21:21"
+#docker-compose up -d
+#ftp <docker-host>

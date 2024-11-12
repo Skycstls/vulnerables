@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  elasticsearch:
+    image: elasticsearch:7.10.0
+    environment:
+      discovery.type: single-node
+    ports:
+      - "9200:9200"
+
+#docker-compose up -d
+
+#curl -X GET http://<docker-host>:9200/_cat/indices
+#curl -X DELETE http://<docker-host>:9200/index_name
